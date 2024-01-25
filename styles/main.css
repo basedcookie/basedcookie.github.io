@@ -10,7 +10,7 @@
 
 
 h1, h2{
-    font-family: Roboto Slab;
+    font-family: 'Open Sans', Roboto Slab, sans-serif;
     font-weight: normal;
 }
 
@@ -21,10 +21,12 @@ a{
 /* Body and header styles */
 body{
     font-family: Roboto Slab, 'Open Sans', sans-serif;
-    background-color: white;
     margin: 0px auto;
     text-align: center;
-    color: #2f3f7d;
+    /* color: #2f3f7d; */
+    background-image: linear-gradient(rgba(0,0,0,.2) 18%, rgba(253, 253, 253, 1) 21%), url("/assets/output_1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 header nav, header div#landing, section{
@@ -33,10 +35,10 @@ header nav, header div#landing, section{
 }
 
 header{
-    padding: 10px 5% 20px 5%;
-    background-color: #e8f9fe;
+    padding: 10px 5% 0px 5%;
+    /* background-color: #e8f9fe; */
     margin: 0px auto;
-    margin-bottom: 20px;
+    margin-bottom: 00px;
     overflow-y: hidden;
 }
 
@@ -48,22 +50,24 @@ header nav{
 
 header nav img{
     display: inline-flex;
-    width: 180px;
+    width: 25%;
     margin-right: 5%;
     margin-left: 0px;
 }
 
 header nav div{
     display: inline-flex;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 header nav a{
-    color: #2f3f7d;
+    /*color: #2f3f7d;*/
+    color: rgb(245, 247, 244);
+    text-shadow: 0px 0px 10px #0eb3e1;
     text-transform: uppercase;
     padding: 8px;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 21px;
     text-decoration: none;
 }
 header nav a:hover{
@@ -86,19 +90,26 @@ header nav div#navBtn a{
 div#landing{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between ;
     padding-bottom: 20px;
+    color: rgb(245, 247, 244);
 }
 
 div#landingLeft{
     min-width: 380px;
     text-align: left;
-    width: 30%;
+    width: 45%;
 }
 
 div#landingLeft h1{
     font-weight: bold;
-    font-size: 42px
+    font-size: 42px;
+    text-shadow: 0px 0px 10px #0eb3e1;
+}
+
+div#landingLeft p{
+    font-size: 22px;
+    text-shadow: 0px 0px 10px black;
 }
 
 div#landingLeft #landingContact{
@@ -134,7 +145,7 @@ div#landingLeft #landingContact a img{
 
 div#landingRight{
     width: 60%;
-    min-height: 560px;
+    min-height: 520px;
     max-width: 740px;
 }
 
@@ -214,22 +225,32 @@ section{
     padding: 40px 5% 20px 5%;
 
 }
-
+section#about_us{
+    color: rgb(245, 247, 244);
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
 section#about_us div#about_imgWrap{
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 600px;
-    width: 600px;
+    height: 500px;
     margin: 0px;
     align-content: flex-start;
     gap: 10px;
     position: relative;
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
-section#about_us div#about_imgWrap img{
+/* section#about_us div#about_imgWrap img{
     z-index: 5;
+} */
+section#about_us div#about_imgWrap picture{
+    width: 500px;
+}
+section#about_us div#about_imgWrap picture img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 section#about_us div#about_imgWrap > img.sideImg{
@@ -238,8 +259,8 @@ section#about_us div#about_imgWrap > img.sideImg{
 
 section#about_us div#about_imgWrap div{
     display: block;
-    width: 510px;
-    height: 510px;
+    width: 480px;
+    height: 480px;
     background-color: #e8f9fe;;
     position: absolute;
     z-index: 3;
@@ -256,7 +277,9 @@ section#about_us div#about_text{
 }
 
 section#about_us div#about_text h2{
-    font-family: Montserrat;
+    color: rgb(245, 247, 244);
+    text-shadow: 0px 0px 12px black;
+    font-size: 38px;
 }
 
 section#about_us div#about_text h1{
@@ -265,9 +288,9 @@ section#about_us div#about_text h1{
 }
 
 section#about_us div#about_text p{
-    color: rgba(77,77,77,1);
-    font-size: 18px;
+    font-size: 22px;
     line-height: 30px;
+    text-shadow: 0px 0px 8px black;
 }
 
 section > h1{
@@ -285,6 +308,7 @@ section h2{
 }
 
 section#our_services{
+    padding-top: 0px;
     padding-bottom: 0px;
     background-color: #f9f9f9;
     background-image: linear-gradient(#fdfdfd 70%, #f9f9f9);
@@ -495,6 +519,10 @@ section#repaired > a img{
     margin-right: 10px;
     margin-top: -2px;
     width: 40px;
+}
+
+section#faqs{
+    background-color: transparent;
 }
 
 section#faqs h1{
