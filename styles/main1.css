@@ -24,18 +24,24 @@ body{
     margin: 0px auto;
     text-align: center;
     /* color: #2f3f7d; */
-    background-image: linear-gradient(rgba(0,0,0,.2) 19%, rgba(253, 253, 253, 1) 24%), url("/assets/output_1.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    
 }
+
 
 header nav, header div#landing, section{
     max-width: 1800px;
     margin: 0px auto;
 }
 
+#bgWrap{
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("/assets/output_1.webp");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 header{
-    padding: 10px 5% 0px 5%;
+    padding: 10px 3% 0px 3%;
     /* background-color: #e8f9fe; */
     margin: 0px auto;
     margin-bottom: 00px;
@@ -111,6 +117,7 @@ div#landingLeft h1, #our_services h1{
 div#landingLeft p{
     font-size: 22px;
     text-shadow: 0px 0px 10px black;
+    padding-right: 5px;
 }
 
 div#landingLeft #landingContact{
@@ -154,7 +161,7 @@ div#landingRight .landingContainer{
     width: 100%;
     position: relative;
     display: inline-block;
-    min-width: 580px;
+    min-width: 480px;
 }
 
 div#landingRight .landingContainer #phoneBg{
@@ -193,14 +200,15 @@ div#landingRight .landingContainer #phoneBG_linkWrap > a{
     display: inline-block;
     top: 82%;
     right: 15%;
-    padding: 20px 25px;
+    padding: 3% 20px;
     background-color: white;
     color: #0eb3e1;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #0eb3e177;
     transition: box-shadow 1s;
     z-index: 4;
-    margin-right: 36%;
+    margin-right: 35%;
+    max-height: 65px;
 }
 
 div#landingRight .landingContainer #phoneBG_linkWrap > a:hover{
@@ -217,7 +225,7 @@ div#landingRight .landingContainer > img{
     width: 100%;
     display: block;
     z-index: 3;
-    min-width: 580px;
+    min-width: 480px;
 }
 
 /* main Content */
@@ -310,15 +318,17 @@ section h2{
 
 section#our_services{
     padding-top: 0px;
-    padding-bottom: 230px;
+    padding-left: 2%;
+    padding-right: 2%;
     /*background-color: #f9f9f9;
     background-image: linear-gradient(#fdfdfd 70%, #f9f9f9);*/
 }
 
 section#our_services div#services_wrapper{
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
 }
 
 section#our_services div#services_wrapper div.service_box{
@@ -333,6 +343,14 @@ section#our_services div#services_wrapper div.service_box{
     border-radius: 10px;;
     box-shadow: 0px 5px 15px #0eb3e185;
     margin: 10px 5px;
+}
+
+section#our_services div#services_wrapper div.service_box:first-child{
+    
+}
+
+section#our_services div#services_wrapper div.service_box:last-child{
+    
 }
 
 section#our_services div#services_wrapper div.service_box > img{
