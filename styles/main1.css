@@ -168,6 +168,10 @@ div#landingRight .phoneBG{
     left: 8%;
 }
 
+div#landingRight .phoneBG #phoneBG_linkWrap{
+    
+}
+
 div#landingRight .phoneBG #phoneBG_linkWrap > a img{
     vertical-align: middle;
     margin-right: 10px;
