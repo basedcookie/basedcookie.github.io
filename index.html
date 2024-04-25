@@ -20,7 +20,8 @@
 
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" media="(max-width:1023px)" href="styles/mobileXL.css">
-    <!--<link rel="stylesheet" media="(max-width:617px)" href="styles/mobile.css">!-->
+    <link rel="stylesheet" media="(max-width:860px)" href="styles/mobile.css">
+    <link rel="stylesheet" media="(max-width:580px)" href="styles/mobileS.css">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -29,12 +30,12 @@
             <nav>
                 <img src="/assets/logo.png">
                 <div>
-                    <a href="#about_us">About</a>
+                    <a href="#about_us" class="smallMobileHide">About</a>
                     <a href="#our_services"><span class="xlHide">Our</span> Services</a>
-                    <a href="#contact_form">Contact</a>
+                    <a href="#contact_form" class="smallMobileHide">Contact</a>
                 </div>
                 <div id="navBtn">
-                    <a href="#quote_form">Get a quote</a>
+                    <a href="#quote_form"><span class="mobileHide">Get a </span>quote</a>
                 </div>
             </nav>
             <div id="landing">
@@ -43,14 +44,14 @@
                     <p>iRepairWireless - specializing in the repair of smart phones, tablets, gaming consoles and more! We carry a large variety of iPhone and Android cases in stock, as well as many other phone accessories!</p>
                     <div id="landingContact">
                         <a href="tel:+14147632556"><img src="assets/svg/contact.svg" />414-763-2556</a>
-                        <a href="#contact_form" class="smallContact">Contact Us<img src="assets/svg/contactArrow.svg" /></a>
+                        <a href="#contact_form" class="smallContact">Contact Us<!--<img src="assets/svg/contactArrow.svg" />!--></a>
                     </div>
                 </div>
                 <div id="landingRight">
                     <div class="phoneBG">
                         <div id="phoneBG_linkWrap">
                             <a href="https://www.tiktok.com/@irepairwirelessllc">
-                                <img width="30" src="/assets/tiktok-logo.png">
+                                <img src="/assets/tiktok-logo.png">
                                 <span>iRepairWirelessMKE</span>
                             </a>
                         </div>
@@ -59,50 +60,51 @@
             </div>
         </header>
         <h2>Our Services</h2>
-        <div id="services_wrapper">
-            <div class="service_box">
-                <img src="assets/svg/phone.svg" />
-                <h3>Phone repair</h3>
-                <ul>
-                    <li><img src="assets/svg/checkmark.svg" />iPhone and Android repair</li>
-                    <li><img src="assets/svg/checkmark.svg" />LCD & Glass replacement</li>
-                    <li><img src="assets/svg/checkmark.svg" />Battery replacement</li>
-                    <li><img src="assets/svg/checkmark.svg" />Charging port repair</li>
-                    <li><img src="assets/svg/checkmark.svg" />Home button replacement</li>
-                </ul>
-            </div>
-            <div class="service_box">
-                <img src="assets/svg/laptop.svg" />
-                <h3>Computer repair</h3>
-                <ul>
-                    <li><img src="assets/svg/checkmark.svg" />PC and Laptop repair</li>
-                    <li><img src="assets/svg/checkmark.svg" />Screen replacement</li>
-                    <li><img src="assets/svg/checkmark.svg" />Computer diagnostics</li>
-                    <li><img src="assets/svg/checkmark.svg" />Battery replacement</li>
-                </ul>
-            </div>
-            <div class="service_box">
-                <img src="assets/svg/controller.svg" />
-                <h3>Console repair</h3>
-                <ul>
-                    <li><img src="assets/svg/checkmark.svg" />Ps5 and Xbox repair</li>
-                    <li><img src="assets/svg/checkmark.svg" />Nintendo switch repair</li>
-                    <li><img src="assets/svg/checkmark.svg" />Fix console overheating</li>
-                    <li><img src="assets/svg/checkmark.svg" />HDMI port fix</li>
-                </ul>
-            </div>
-            <div class="service_box">
-                <img src="assets/svg/services.svg" />
-                <h3>Special Services</h3>
-                <ul>
-                    <li><img src="assets/svg/checkmark.svg" />Password recovery</li>
-                    <li><img src="assets/svg/checkmark.svg" />Phone housing replacement</li>
-                    <li><img src="assets/svg/checkmark.svg" />Water damage repair</li>
-                    <li><img src="assets/svg/checkmark.svg" />Custom light up apple logo (Iphone 6/7)</li>
-                </ul>
+        <section class="container">
+            <div id="services_wrapper">
+                <div class="service_box">
+                    <img src="assets/svg/phone.svg" />
+                    <h3>Phone repair</h3>
+                    <ul>
+                        <li><img src="assets/svg/checkmark.svg" />iPhone and Android repair</li>
+                        <li><img src="assets/svg/checkmark.svg" />LCD & Glass replacement</li>
+                        <li><img src="assets/svg/checkmark.svg" />Battery replacement</li>
+                        <li><img src="assets/svg/checkmark.svg" />Charging port repair</li>
+                        <li><img src="assets/svg/checkmark.svg" />Home button replacement</li>
+                    </ul>
+                </div>
+                <div class="service_box">
+                    <img src="assets/svg/laptop.svg" />
+                    <h3>Computer repair</h3>
+                    <ul>
+                        <li><img src="assets/svg/checkmark.svg" />PC and Laptop repair</li>
+                        <li><img src="assets/svg/checkmark.svg" />Screen replacement</li>
+                        <li><img src="assets/svg/checkmark.svg" />Computer diagnostics</li>
+                        <li><img src="assets/svg/checkmark.svg" />Battery replacement</li>
+                    </ul>
+                </div>
+                <div class="service_box">
+                    <img src="assets/svg/controller.svg" />
+                    <h3>Console repair</h3>
+                    <ul>
+                        <li><img src="assets/svg/checkmark.svg" />Ps5 and Xbox repair</li>
+                        <li><img src="assets/svg/checkmark.svg" />Nintendo switch repair</li>
+                        <li><img src="assets/svg/checkmark.svg" />Fix console overheating</li>
+                        <li><img src="assets/svg/checkmark.svg" />HDMI port fix</li>
+                    </ul>
+                </div>
+                <div class="service_box">
+                    <img src="assets/svg/services.svg" />
+                    <h3>Special Services</h3>
+                    <ul>
+                        <li><img src="assets/svg/checkmark.svg" />Password recovery</li>
+                        <li><img src="assets/svg/checkmark.svg" />Phone housing replacement</li>
+                        <li><img src="assets/svg/checkmark.svg" />Water damage repair</li>
+                        <li><img src="assets/svg/checkmark.svg" />Custom light up apple logo (Iphone 6/7)</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
     <section id="our_services">
         <div id="img_contain">
             <div class="fadeTop"></div>

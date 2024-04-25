@@ -1,0 +1,49 @@
+.smallMobileHide{
+    display: none;
+}
+
+header nav img{
+    margin-right: auto;
+}
+
+header nav {
+    justify-content: flex-end;
+}
+
+div#landingRight .phoneBG{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    left: 0;
+}
+
+section#reviews{
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-top: 0px;
+}
+
+section#reviews div.reviewHeading{
+    padding-right: 0px;
+}
+
+section#reviews div.reviewHeading h2{
+    margin-top: 0px;
+}
+
+section#reviews div.reviewText {
+    width: 90%;
+    max-width: 900px;
+    text-align: left;
+    color: rgba(77, 77, 77, 1);
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+footer div#footer_flex > ul#footerWrp{
+    display: block;
+}
+
+footer div#footer_flex ul .footerSoc:last-child {
+    margin-left: 0px;
+}
