@@ -545,13 +545,16 @@ section#reviews div.reviewText p.reviewAuthor{
 div.contact_us{
     background-color: rgba(47,63,125,1);
     color: white !important;
-    display: flex;
+    display: grid;
     justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 0px;
 }
 
 div.contact_us form{
-    width: 50%;
-    margin-bottom: 35px;
+    /*width: 100%;
+    margin-bottom: 35px;*/
     padding-top: 20px;
 }
 
@@ -571,6 +574,10 @@ div.contact_us form fieldset{
     text-align: left;
 }
 
+div.contact_us form fieldset .field_row{
+    text-align: center;
+}
+
 input, textarea, select{
     display: block;
     background-color: transparent;
@@ -579,6 +586,16 @@ input, textarea, select{
     margin: 15px auto 15px auto;
     width: 70%;
     color: white;
+}
+
+select{
+    width: 45%;
+    margin: 0px 5px;
+    display: inline-block;
+}
+
+select option, select optgroup{
+    color: black;
 }
 
 input::placeholder, textarea::placeholder{
@@ -603,44 +620,47 @@ div.contact_us form fieldset button{
     margin: 0px auto;
 }
 
-div.contact_us picture{
-    width: 50%;
+div.contact_us .contact_pic{
+    width: 100%;
+    position: relative;
+    max-height: 554px;
+    overflow: hidden;
+}
+
+div.contact_us .contact_pic div.contact_loc{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 300px;
+    background-color: rgba(0,0,0,.7);
+}
+
+div.contact_us .contact_pic div.contact_loc a{
+    padding: 10px 20px;
+    display: block;
+    position: relative;
+}
+
+div.contact_us .contact_pic div.contact_loc a:hover + iframe{
+    position: relative;
+    height: 200px;
+}
+
+div.contact_us .contact_pic div.contact_loc iframe{
+    height: 0px;
+    position: absolute;
+    left: 0px;
+    transition: height 1s;
 }
 
 div.contact_us picture img{
     width: 100%;
     height: 100%;
+    
 }
 
-div.contact_us.flipped{
-    background-color: rgba(232,249,254,1);
-    color: rgba(47,63,125,1) !important;
-    margin-bottom: 60px;
-}
-
-div.contact_us.flipped div.field_row{
-    margin: 0px auto;
-    width: 70%; 
-    display: flex;
-    justify-content: center;
-}
-
-div.contact_us.flipped div.field_row select{
-    margin: 0px;
-    min-width: 50%;
-}
-
-div.contact_us.flipped div.field_row select:last-child{
-    margin-left: 31px;
-}
-
-div.contact_us.flipped input, div.contact_us.flipped textarea, div.contact_us.flipped select{
-    color: rgba(47,63,125,1) !important;
-    border: 1px solid rgba(47,63,125,1);
-}
-
-div.contact_us.flipped input::placeholder, div.contact_us.flipped textarea::placeholder{
-    color: rgba(47,63,125,1) !important;
+div.contact_us .contact_box#quote_form{
+    padding-bottom: 30px;
 }
 
 footer{

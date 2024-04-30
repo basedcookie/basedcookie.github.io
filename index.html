@@ -150,7 +150,7 @@
         </div>
     </section>
     <div class="contact_us">
-        <form id="contact_form" action="https://formspree.io/f/mwkyrblq" method="POST">
+        <form class="contact_box" id="contact_form" action="https://formspree.io/f/mwkyrblq" method="POST">
             <h1>Contact</h1>
             <fieldset>
                 <input id="fName" name="name" type="text" placeholder="Full Name">
@@ -160,20 +160,30 @@
                 <div class="button_container"><button type="submit">Submit</button></div>
             </fieldset>
         </form>
-        <picture>
-            <source srcset="/assets/2024-01-23.webp" type="image/webp">
-            <!-- <source srcset="img.jpg" type="image/jpeg"> !-->
-            <img src="/assets/2024-01-23.webp" alt="Our Location">
-            
-        </picture>
-    </div>
-    <div class="contact_us flipped">
-        <picture>
-            <source srcset="/assets/2023-11-15.webp" type="image/webp">
-            <!-- <source srcset="img.jpg" type="image/jpeg"> !-->
-            <img src="/assets/2023-11-15.webp" alt="Our Store">
-        </picture>
-        <form id="quote_form" action="https://formspree.io/f/mwkyrblq" method="POST">
+        <div class="contact_box contact_pic">
+            <picture>
+                <source srcset="/assets/2024-01-23.webp" type="image/webp">
+                <!-- <source srcset="img.jpg" type="image/jpeg"> !-->
+                <img src="/assets/2024-01-23.webp" alt="Our Location">
+                
+            </picture>
+            <div class="contact_loc">
+                <a>3514 W Burnham Street Suite 100</a>
+                <iframe width="300" height="200" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ-79tMZobBYgRmxQRewM9VhA&key=AIzaSyAyAKAejN-nMXPXQvT5I0SzrpdpdKUbCk4&zoom=15"></iframe>
+            </div>
+        </div>
+        <div class="contact_box contact_pic">
+            <picture>
+                <!--<source srcset="/assets/2023-11-15.webp" type="image/webp">!-->
+                <source srcset="/assets/loc1.jpg" type="image/jpeg">
+                <img src="/assets/loc1.jpg" alt="Our Store">
+            </picture>
+            <div class="contact_loc">
+                <a>3920 South 27th Street</a>
+                <iframe width="300" height="200" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ3Za0YcERBYgRouKloZH-ayg&key=AIzaSyAyAKAejN-nMXPXQvT5I0SzrpdpdKUbCk4&zoom=15"></iframe>
+            </div>
+        </div>
+        <form class="contact_box" id="quote_form" action="https://formspree.io/f/mwkyrblq" method="POST">
             <h1>Quote</h1>
             <fieldset>
                 <input id="fName" name="name" type="text" placeholder="Full Name">
@@ -217,7 +227,7 @@
                         <option value="other_issue">Other issue</option>
                     </select>
                 </div>
-                <textarea name="message" rows="5" placeholder="Comments..."></textarea>
+                <textarea name="message" rows="3" placeholder="Comments..."></textarea>
                 <div class="button_container"><button type="submit">Submit</button></div>
             </fieldset>
         </form>
@@ -226,7 +236,7 @@
     <footer>
         <img src="/assets/logo.png">
         <div id="footer_flex">
-            <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7drcvMQQBYgRbcUZT51dOOI&key=AIzaSyAyAKAejN-nMXPXQvT5I0SzrpdpdKUbCk4"></iframe>
+            <!--<iframe loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7drcvMQQBYgRbcUZT51dOOI&key=AIzaSyAyAKAejN-nMXPXQvT5I0SzrpdpdKUbCk4"></iframe>!-->
             <div class="footerLoc">
                 <ul>
                     <li><img src="assets/svg/location.svg" />Locations</li>
