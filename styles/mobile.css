@@ -52,6 +52,52 @@ div.contact_us #quote_form{
 }
 
 div.contact_us .contact_pic{
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+div.contact_us .contact_pic:first-child{
     grid-row-start: 2;
     grid-row-end: 2;
+}
+
+div.contact_us .contact_pic:nth-child(2){
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+
+section > h1{
+    font-size: 32px;
+    width: auto;
+}
+
+section#reviews div.reviewText {
+    width: 100%;
+    margin-left: 0px;
+}
+
+div.contact_us picture img {
+    width: 140%;
+}
+
+footer div#footer_flex{
+    padding: 25px 10px;
+}
+
+footer div#footer_flex ul li img {
+    width: 20px;
+    height: 20px;
+}
+
+footer div#footer_flex ul li {
+    padding-left: 25px;
+}
+
+footer div#footer_flex ul li .mobileBr{
+    display: block;
+}
+
+footer div#footer_flex ul li:not(.hoursLi):has(> span.mobileHide){
+    margin-top: 5px !important;
 }
