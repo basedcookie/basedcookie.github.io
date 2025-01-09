@@ -97,13 +97,13 @@ footer div#footer_flex ul li img {
 }
 
 footer div#footer_flex ul li {
-    padding-left: 25px;
+    padding-left: 0px;
 }
 
 footer div#footer_flex ul li .mobileBr{
     display: block;
 }
 
-footer div#footer_flex ul li:not(.hoursLi):has(> span.mobileHide){
-    margin-top: 5px !important;
+footer div#footer_flex ul#footerWrp{
+    margin-top: 10px;
 }

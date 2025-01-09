@@ -23,6 +23,10 @@ div#landingRight .phoneBG{
     right: 10px;
 }
 
+#bgWrap h2{
+    width: auto;
+}
+
 section#faqs div#faqs_contain div.faqs_box {
     width: 80%;
 }
