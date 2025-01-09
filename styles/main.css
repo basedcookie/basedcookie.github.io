@@ -110,7 +110,7 @@ div#landingLeft p{
 }
 
 div#landingLeft #landingContact{
-    margin-top: 60px;
+    margin-top: 65px;
 }
 
 div#landingLeft #landingContact a{
@@ -120,6 +120,7 @@ div#landingLeft #landingContact a{
     text-decoration: none;
 }
 
+/*
 div#landingLeft #landingContact a.smallContact{
     font-size: 18px;
     font-weight: normal;
@@ -133,6 +134,7 @@ div#landingLeft #landingContact a.smallContact img{
     margin-right: 0px;
     margin-left: 5px;
 }
+*/
 
 div#landingLeft #landingContact a img{
     width: 30px;
@@ -153,7 +155,7 @@ div#landingRight{
 
 div#landingRight .phoneBG{
     position: absolute;
-    bottom: 20px;
+    bottom: 35px;
     left: 8%;
 }
 
@@ -294,7 +296,7 @@ section#our_services #img_contain{
 
 section#our_services #img_contain div.fadeTop{
     position: absolute;
-    top: 10px;
+    top: 0px;
     height: 80px;
     width: 100%;
     background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%);
@@ -548,7 +550,7 @@ div.contact_us{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    /*grid-template-rows: repeat(1, 1fr);*/
     row-gap: 0px;
 }
 
@@ -606,8 +608,6 @@ div.contact_us form fieldset div.button_container{
     display: block;
     width: 70%;
     margin: 0px auto;
-    position: relative;
-    left: -16px;
 }
 
 div.contact_us form fieldset button{
@@ -617,6 +617,7 @@ div.contact_us form fieldset button{
     padding: 10px;
     width: 140px;
     font-size: 16px;
+    display: block;
     margin: 0px auto;
 }
 
@@ -667,9 +668,9 @@ footer{
     
 }
 
-footer img{
+footer > img{
     width: 240px;
-    margin-bottom: 40px;
+    margin: 15px auto;
 }
 
 footer div#footer_flex{
@@ -720,7 +721,6 @@ footer div#footer_flex > ul:first-of-type li:last-child a img{
 
 footer div#footer_flex ul li:first-child{
     color: #2f3f7d;
-    font-weight: bold;
     font-size: 24px;
     padding-left: 0px !important;
 }
@@ -729,14 +729,14 @@ footer div#footer_flex ul li img{
     width: 30px;
     height: 30px;
     margin-bottom: 5px;
-    margin-right: 5px;
+    margin-right: 10px;
     vertical-align: middle;
 }
 
 footer div#footer_flex ul li{
-    padding-left: 35px;
+    padding-left: 40px;
     margin-bottom: 5px;
-    color: #4d4d4d;
+    color: #323232;
     font-size: 16px;
     font-family: Montserrat;
     width: 100%;
@@ -756,13 +756,15 @@ footer div#footer_flex ul li.footerSoc{
 }
 
 footer div#footer_flex ul li.footerSoc ul li{
-    padding-left: 40px;
+    text-align: center;
     margin-bottom: 0px;
+    padding-left: 0px;
 }
 
 footer div#footer_flex ul li.footerSoc ul li a{
     font-size: 18px;
     white-space: nowrap;
+    color: #323232;
 }
 
 footer div#footer_flex ul li.footerSoc img{
@@ -771,11 +773,11 @@ footer div#footer_flex ul li.footerSoc img{
 
 footer > p{
   margin: 0px auto;
-  font-size: 22px;
+  font-size: 18px;
   color: rgb(0, 0 , 0, .35);
   background-color: rgba(232,249,254,1);
   font-weight: normal;
-  padding: 15px 0px;
+  padding: 12px 0px;
 }
 
 @keyframes tilt-n-move-shaking {
