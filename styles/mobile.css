@@ -18,6 +18,12 @@ div#landingRight{
     background-position-x: center;
 }
 
+div#landingRight .phoneBG{
+    right: auto;
+    left: 8%;
+    bottom: 35px;
+}
+
 div#landingRight .phoneBG #phoneBG_linkWrap > a{
     padding: 0px;
     background-color: transparent;

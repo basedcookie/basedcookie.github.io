@@ -143,7 +143,8 @@ div#landingLeft #landingContact a img{
 }
 
 div#landingRight{
-    width: 60%;
+    width: 55%;
+    margin-left: 10px;
     min-height: 520px;
     max-width: 740px;
     background-image: url("../assets/landingPhone.png");
@@ -155,7 +156,7 @@ div#landingRight{
 
 div#landingRight .phoneBG{
     position: absolute;
-    bottom: 35px;
+    bottom: 40px;
     left: 8%;
 }
 
@@ -172,8 +173,8 @@ div#landingRight .phoneBG #phoneBG_linkWrap > a img{
 
 div#landingRight .phoneBG #phoneBG_linkWrap > a{
     display: inline-block;
-    padding: 20px 25px;
-    background-color: white;
+    padding: 15px 20px;
+    background-color: rgba(183, 235, 251, 0.5);
     /*color: #0eb3e1;*/
     color: rgb(19, 19, 29);
     border-radius: 10px;
