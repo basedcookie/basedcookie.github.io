@@ -18,6 +18,10 @@ header nav div#navBtn a {
     padding: 10px;
 }
 
+div#landingLeft #landingContact {
+    margin-top: 20px;
+}
+
 div#landingRight .phoneBG{
     left: auto;
     right: 10px;

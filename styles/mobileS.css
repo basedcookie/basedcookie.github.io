@@ -3,11 +3,24 @@
 }
 
 header nav img{
-    margin-right: auto;
+    /*margin-right: auto;*/
+    width: 40%;
 }
 
 header nav {
-    justify-content: flex-end;
+    padding: 10px 2%;
+}
+
+header nav a {
+    margin-right: 4px;
+}
+
+header nav div#navBtn {
+    margin-left: 2%;
+}
+
+div#landingLeft h1 {
+    font-size: 34px;
 }
 
 div#services_wrapper{

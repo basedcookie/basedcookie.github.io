@@ -45,11 +45,11 @@ div#landingLeft{
     width: 90%;
 }
 
-div.contact_us #contact_form{
+div#contact_us #contact_form{
     display: none;
 }
 
-div.contact_us #quote_form{
+div#contact_us #quote_form{
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -57,18 +57,18 @@ div.contact_us #quote_form{
     display: inline-block;
 }
 
-div.contact_us .contact_pic{
+div#contact_us .contact_pic{
 
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
-div.contact_us .contact_pic:first-child{
+div#contact_us .contact_pic:first-child{
     grid-row-start: 2;
     grid-row-end: 2;
 }
 
-div.contact_us .contact_pic:nth-child(2){
+div#contact_us .contact_pic:nth-child(2){
     grid-row-start: 3;
     grid-row-end: 3;
 }
@@ -83,7 +83,7 @@ section#reviews div.reviewText {
     margin-left: 0px;
 }
 
-div.contact_us picture img {
+div#contact_us picture img {
     width: 140%;
 }
 
